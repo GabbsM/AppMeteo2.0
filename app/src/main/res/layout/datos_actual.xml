@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="416dp"
+        android:layout_height="660dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/foto_cielo" />
+
+    <TextView
+        android:id="@+id/fecha_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fecha"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_temperatura_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temperatura"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/fecha_actual"
+        android:layout_alignStart="@id/fecha_actual"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/text_clima_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clima"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/text_temperatura_actual"
+        android:layout_alignStart="@id/text_temperatura_actual"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/text_lluvia_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lluvia_actual"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/text_clima_actual"
+        android:layout_alignStart="@id/text_clima_actual"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
